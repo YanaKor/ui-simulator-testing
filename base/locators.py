@@ -7,3 +7,4 @@ class IndexPageLocators:
     LOGIN_BUTTON = (By.CSS_SELECTOR, ".login-button")
     TITLE_TEXT = (By.CSS_SELECTOR, ".logout-button")
     ERROR_MESSAGE = (By.CSS_SELECTOR, ".error-message")
+
