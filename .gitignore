@@ -1,0 +1,12 @@
+.idea
+.pytest_cache
+venv
+allure-results
+archive
+**/logfile.log
+output.json
+pyreport.html
+pytest_html_reporter.html
+result.xml
+**/__pycache__/
+

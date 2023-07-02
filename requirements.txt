@@ -3,3 +3,5 @@ pytest~=7.3.1
 webdriver-manager~=3.8.6
 pytest-rerunfailures
 pytest-html-reporter
+allure-pytest
+pytest-pyreport
