@@ -4,6 +4,7 @@ from base.base_object import BaseObject
 from base.locators import IndexPageLocators as In
 from support.assertions import Assertions
 import allure
+from config import USERNAME, PASSWORD
 
 
 class IndexPage(BaseObject, Assertions):
@@ -12,11 +13,11 @@ class IndexPage(BaseObject, Assertions):
         self.driver = driver
 
     @allure.step('Enter user name')
-    def enter_user_name(self, name='correct_username'):
+    def enter_user_name(self, name=USERNAME):
         self.type(In.USERNAME_FIELD, name)
 
     @allure.step('Enter password')
-    def enter_password(self, password='correct_password'):
+    def enter_password(self, password=PASSWORD):
         self.type(In.PASSWORD_FIELD, password)
 
     @allure.step('Click on login button')

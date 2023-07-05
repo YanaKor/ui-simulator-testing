@@ -12,6 +12,11 @@ class BaseObject:
         self.wait = WebDriverWait(driver, 5)
 
     def is_visible(self, locator):
+        """
+
+        :param locator:
+        :return:
+        """
         self.log.info(f"Element {locator} is visible")
         return self.wait.until(ec.visibility_of_element_located(locator))
 
